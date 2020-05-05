@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440AF3732279268100D91B0D /* ImageProcessMTCNN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 440AF3712279268100D91B0D /* ImageProcessMTCNN.cpp */; };
+		440AF37622792C1500D91B0D /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 440AF37522792C1500D91B0D /* haarcascade_frontalface_default.xml */; };
+		440AF37922792C3200D91B0D /* ImageProcessHaar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 440AF37722792C3200D91B0D /* ImageProcessHaar.cpp */; };
+		4423BE8B22756CAD00A365FB /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BE8A22756CAD00A365FB /* FrameExtractor.swift */; };
+		4452F0A7227B629600FEAA69 /* MaintTVC+FPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4452F0A6227B629600FEAA69 /* MaintTVC+FPS.swift */; };
+		4452F0A9227B726800FEAA69 /* MaintTVC+Cam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4452F0A8227B726800FEAA69 /* MaintTVC+Cam.swift */; };
+		449932AD2277AC9E00F28D03 /* det1.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 449932A72277AC9E00F28D03 /* det1.caffemodel */; };
+		449932AE2277AC9E00F28D03 /* det1.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 449932A82277AC9E00F28D03 /* det1.prototxt */; };
+		449932AF2277AC9E00F28D03 /* det3.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 449932A92277AC9E00F28D03 /* det3.caffemodel */; };
+		449932B02277AC9E00F28D03 /* det3.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 449932AA2277AC9E00F28D03 /* det3.prototxt */; };
+		449932B12277AC9E00F28D03 /* det2.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 449932AB2277AC9E00F28D03 /* det2.prototxt */; };
+		449932B22277AC9E00F28D03 /* det2.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 449932AC2277AC9E00F28D03 /* det2.caffemodel */; };
+		449932CC2277ACD200F28D03 /* onet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 449932C32277ACD200F28D03 /* onet.cpp */; };
+		449932CD2277ACD200F28D03 /* pnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 449932C82277ACD200F28D03 /* pnet.cpp */; };
+		449932CE2277ACD200F28D03 /* detector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 449932C92277ACD200F28D03 /* detector.cpp */; };
+		449932CF2277ACD200F28D03 /* rnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 449932CA2277ACD200F28D03 /* rnet.cpp */; };
+		449932D42277AE2800F28D03 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 449932D22277AE0E00F28D03 /* libz.tbd */; };
+		449932D62277AE3A00F28D03 /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 449932D52277AE3A00F28D03 /* libpthread.tbd */; };
+		449932D82277AE4100F28D03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449932D72277AE4100F28D03 /* CoreGraphics.framework */; };
+		449A30F2227798A90086094E /* ImageProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 449A30F0227798A90086094E /* ImageProcess.cpp */; };
+		449A30F622779CD80086094E /* MaintTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A30F522779CD80086094E /* MaintTVC.swift */; };
+		449F140A22757336005D9ABF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 449F140922757336005D9ABF /* README.md */; };
+		44D106EB2275682E00F72547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D106EA2275682E00F72547 /* AppDelegate.swift */; };
+		44D106ED2275682E00F72547 /* ProcessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D106EC2275682E00F72547 /* ProcessVC.swift */; };
+		44D106F02275682E00F72547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D106EE2275682E00F72547 /* Main.storyboard */; };
+		44D106F22275682F00F72547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D106F12275682F00F72547 /* Assets.xcassets */; };
+		44D106F52275682F00F72547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D106F32275682F00F72547 /* LaunchScreen.storyboard */; };
+		44D10702227568EC00F72547 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44D10701227568EC00F72547 /* OpenCVWrapper.mm */; };
+		44F57C80227CB2530083F896 /* ImageProcessDNN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44F57C79227CB2520083F896 /* ImageProcessDNN.cpp */; };
+		44F57C81227CB2530083F896 /* opencv_face_detector_uint8.pb in Resources */ = {isa = PBXBuildFile; fileRef = 44F57C7B227CB2520083F896 /* opencv_face_detector_uint8.pb */; };
+		44F57C82227CB2530083F896 /* deploy.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 44F57C7C227CB2520083F896 /* deploy.prototxt */; };
+		44F57C83227CB2530083F896 /* res10_300x300_ssd_iter_140000_fp16.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 44F57C7D227CB2520083F896 /* res10_300x300_ssd_iter_140000_fp16.caffemodel */; };
+		44F57C84227CB2530083F896 /* opencv_face_detector.pbtxt in Resources */ = {isa = PBXBuildFile; fileRef = 44F57C7E227CB2520083F896 /* opencv_face_detector.pbtxt */; };
+		518801FE87978686A3A381B3 /* libPods-opencvios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9FCFA89709011D49473AC3 /* libPods-opencvios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C52DF4AACE63C967F9607BC /* Pods-opencvios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencvios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opencvios/Pods-opencvios.debug.xcconfig"; sourceTree = "<group>"; };
+		440AF3712279268100D91B0D /* ImageProcessMTCNN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcessMTCNN.cpp; sourceTree = "<group>"; };
+		440AF3722279268100D91B0D /* ImageProcessMTCNN.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageProcessMTCNN.hpp; sourceTree = "<group>"; };
+		440AF37522792C1500D91B0D /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		440AF37722792C3200D91B0D /* ImageProcessHaar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcessHaar.cpp; sourceTree = "<group>"; };
+		440AF37822792C3200D91B0D /* ImageProcessHaar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageProcessHaar.hpp; sourceTree = "<group>"; };
+		4423BE8A22756CAD00A365FB /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		4452F0A6227B629600FEAA69 /* MaintTVC+FPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MaintTVC+FPS.swift"; sourceTree = "<group>"; };
+		4452F0A8227B726800FEAA69 /* MaintTVC+Cam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MaintTVC+Cam.swift"; sourceTree = "<group>"; };
+		449932A72277AC9E00F28D03 /* det1.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det1.caffemodel; sourceTree = "<group>"; };
+		449932A82277AC9E00F28D03 /* det1.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det1.prototxt; sourceTree = "<group>"; };
+		449932A92277AC9E00F28D03 /* det3.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det3.caffemodel; sourceTree = "<group>"; };
+		449932AA2277AC9E00F28D03 /* det3.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det3.prototxt; sourceTree = "<group>"; };
+		449932AB2277AC9E00F28D03 /* det2.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det2.prototxt; sourceTree = "<group>"; };
+		449932AC2277AC9E00F28D03 /* det2.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det2.caffemodel; sourceTree = "<group>"; };
+		449932C22277ACD200F28D03 /* rnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rnet.h; sourceTree = "<group>"; };
+		449932C32277ACD200F28D03 /* onet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = onet.cpp; sourceTree = "<group>"; };
+		449932C42277ACD200F28D03 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		449932C52277ACD200F28D03 /* face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = face.h; sourceTree = "<group>"; };
+		449932C62277ACD200F28D03 /* pnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnet.h; sourceTree = "<group>"; };
+		449932C72277ACD200F28D03 /* onet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = onet.h; sourceTree = "<group>"; };
+		449932C82277ACD200F28D03 /* pnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pnet.cpp; sourceTree = "<group>"; };
+		449932C92277ACD200F28D03 /* detector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detector.cpp; sourceTree = "<group>"; };
+		449932CA2277ACD200F28D03 /* rnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rnet.cpp; sourceTree = "<group>"; };
+		449932CB2277ACD200F28D03 /* detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detector.h; sourceTree = "<group>"; };
+		449932D22277AE0E00F28D03 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		449932D52277AE3A00F28D03 /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
+		449932D72277AE4100F28D03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		449A30F0227798A90086094E /* ImageProcess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcess.cpp; sourceTree = "<group>"; };
+		449A30F1227798A90086094E /* ImageProcess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageProcess.hpp; sourceTree = "<group>"; };
+		449A30F522779CD80086094E /* MaintTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintTVC.swift; sourceTree = "<group>"; };
+		449F140922757336005D9ABF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		44D106E72275682E00F72547 /* opencvios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencvios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D106EA2275682E00F72547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44D106EC2275682E00F72547 /* ProcessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessVC.swift; sourceTree = "<group>"; };
+		44D106EF2275682E00F72547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D106F12275682F00F72547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44D106F42275682F00F72547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44D106F62275682F00F72547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D106FF227568EC00F72547 /* opencvios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencvios-Bridging-Header.h"; sourceTree = "<group>"; };
+		44D10700227568EC00F72547 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		44D10701227568EC00F72547 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		44F57C79227CB2520083F896 /* ImageProcessDNN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcessDNN.cpp; sourceTree = "<group>"; };
+		44F57C7B227CB2520083F896 /* opencv_face_detector_uint8.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = opencv_face_detector_uint8.pb; sourceTree = "<group>"; };
+		44F57C7C227CB2520083F896 /* deploy.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deploy.prototxt; sourceTree = "<group>"; };
+		44F57C7D227CB2520083F896 /* res10_300x300_ssd_iter_140000_fp16.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = res10_300x300_ssd_iter_140000_fp16.caffemodel; sourceTree = "<group>"; };
+		44F57C7E227CB2520083F896 /* opencv_face_detector.pbtxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opencv_face_detector.pbtxt; sourceTree = "<group>"; };
+		44F57C7F227CB2520083F896 /* ImageProcessDNN.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageProcessDNN.hpp; sourceTree = "<group>"; };
+		5F9FCFA89709011D49473AC3 /* libPods-opencvios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-opencvios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDA69CBBC516DBDA4293FF9 /* Pods-opencvios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencvios.release.xcconfig"; path = "Pods/Target Support Files/Pods-opencvios/Pods-opencvios.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D106E42275682E00F72547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449932D82277AE4100F28D03 /* CoreGraphics.framework in Frameworks */,
+				449932D62277AE3A00F28D03 /* libpthread.tbd in Frameworks */,
+				449932D42277AE2800F28D03 /* libz.tbd in Frameworks */,
+				518801FE87978686A3A381B3 /* libPods-opencvios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249F66B6BFBBE015E11D6704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C52DF4AACE63C967F9607BC /* Pods-opencvios.debug.xcconfig */,
+				CBDA69CBBC516DBDA4293FF9 /* Pods-opencvios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		440AF37422792AA700D91B0D /* haar */ = {
+			isa = PBXGroup;
+			children = (
+				440AF37822792C3200D91B0D /* ImageProcessHaar.hpp */,
+				440AF37722792C3200D91B0D /* ImageProcessHaar.cpp */,
+				440AF37522792C1500D91B0D /* haarcascade_frontalface_default.xml */,
+			);
+			path = haar;
+			sourceTree = "<group>";
+		};
+		4423BE8C22756CB600A365FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44D106FF227568EC00F72547 /* opencvios-Bridging-Header.h */,
+				44D106EE2275682E00F72547 /* Main.storyboard */,
+				44D106F12275682F00F72547 /* Assets.xcassets */,
+				44D106F32275682F00F72547 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		449932A52277AC8E00F28D03 /* mtcnn */ = {
+			isa = PBXGroup;
+			children = (
+				440AF3722279268100D91B0D /* ImageProcessMTCNN.hpp */,
+				440AF3712279268100D91B0D /* ImageProcessMTCNN.cpp */,
+				449932C92277ACD200F28D03 /* detector.cpp */,
+				449932CB2277ACD200F28D03 /* detector.h */,
+				449932C52277ACD200F28D03 /* face.h */,
+				449932C42277ACD200F28D03 /* helpers.h */,
+				449932C32277ACD200F28D03 /* onet.cpp */,
+				449932C72277ACD200F28D03 /* onet.h */,
+				449932C82277ACD200F28D03 /* pnet.cpp */,
+				449932C62277ACD200F28D03 /* pnet.h */,
+				449932CA2277ACD200F28D03 /* rnet.cpp */,
+				449932C22277ACD200F28D03 /* rnet.h */,
+				449932A62277AC9E00F28D03 /* models */,
+			);
+			path = mtcnn;
+			sourceTree = "<group>";
+		};
+		449932A62277AC9E00F28D03 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				449932A72277AC9E00F28D03 /* det1.caffemodel */,
+				449932A82277AC9E00F28D03 /* det1.prototxt */,
+				449932A92277AC9E00F28D03 /* det3.caffemodel */,
+				449932AA2277AC9E00F28D03 /* det3.prototxt */,
+				449932AB2277AC9E00F28D03 /* det2.prototxt */,
+				449932AC2277AC9E00F28D03 /* det2.caffemodel */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		449932D12277AE0E00F28D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				449932D72277AE4100F28D03 /* CoreGraphics.framework */,
+				449932D52277AE3A00F28D03 /* libpthread.tbd */,
+				449932D22277AE0E00F28D03 /* libz.tbd */,
+				5F9FCFA89709011D49473AC3 /* libPods-opencvios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449A30F72277A9D70086094E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				449A30F522779CD80086094E /* MaintTVC.swift */,
+				4452F0A8227B726800FEAA69 /* MaintTVC+Cam.swift */,
+				4452F0A6227B629600FEAA69 /* MaintTVC+FPS.swift */,
+				44D106EC2275682E00F72547 /* ProcessVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44BF0D94227A994700DBCC3E /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				449A30F1227798A90086094E /* ImageProcess.hpp */,
+				449A30F0227798A90086094E /* ImageProcess.cpp */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		44D106DE2275682E00F72547 = {
+			isa = PBXGroup;
+			children = (
+				44D106E92275682E00F72547 /* opencvios */,
+				44D106E82275682E00F72547 /* Products */,
+				449932D12277AE0E00F28D03 /* Frameworks */,
+				249F66B6BFBBE015E11D6704 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		44D106E82275682E00F72547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D106E72275682E00F72547 /* opencvios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D106E92275682E00F72547 /* opencvios */ = {
+			isa = PBXGroup;
+			children = (
+				44D106EA2275682E00F72547 /* AppDelegate.swift */,
+				4423BE8A22756CAD00A365FB /* FrameExtractor.swift */,
+				449A30F72277A9D70086094E /* Controller */,
+				44D106FC2275686B00F72547 /* opencv */,
+				4423BE8C22756CB600A365FB /* Resources */,
+				44D106F62275682F00F72547 /* Info.plist */,
+				449F140922757336005D9ABF /* README.md */,
+			);
+			path = opencvios;
+			sourceTree = "<group>";
+		};
+		44D106FC2275686B00F72547 /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				44BF0D94227A994700DBCC3E /* filter */,
+				44F57C78227CB2520083F896 /* dnn */,
+				440AF37422792AA700D91B0D /* haar */,
+				449932A52277AC8E00F28D03 /* mtcnn */,
+				44D10700227568EC00F72547 /* OpenCVWrapper.h */,
+				44D10701227568EC00F72547 /* OpenCVWrapper.mm */,
+			);
+			path = opencv;
+			sourceTree = "<group>";
+		};
+		44F57C78227CB2520083F896 /* dnn */ = {
+			isa = PBXGroup;
+			children = (
+				44F57C7F227CB2520083F896 /* ImageProcessDNN.hpp */,
+				44F57C79227CB2520083F896 /* ImageProcessDNN.cpp */,
+				44F57C7A227CB2520083F896 /* models */,
+			);
+			path = dnn;
+			sourceTree = "<group>";
+		};
+		44F57C7A227CB2520083F896 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				44F57C7B227CB2520083F896 /* opencv_face_detector_uint8.pb */,
+				44F57C7C227CB2520083F896 /* deploy.prototxt */,
+				44F57C7D227CB2520083F896 /* res10_300x300_ssd_iter_140000_fp16.caffemodel */,
+				44F57C7E227CB2520083F896 /* opencv_face_detector.pbtxt */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D106E62275682E00F72547 /* opencvios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D106F92275682F00F72547 /* Build configuration list for PBXNativeTarget "opencvios" */;
+			buildPhases = (
+				99F5C1D2EB7E08DD4E9E11C9 /* [CP] Check Pods Manifest.lock */,
+				44D106E32275682E00F72547 /* Sources */,
+				44D106E42275682E00F72547 /* Frameworks */,
+				44D106E52275682E00F72547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opencvios;
+			productName = opencvios;
+			productReference = 44D106E72275682E00F72547 /* opencvios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D106DF2275682E00F72547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Eugene Golovanov";
+				TargetAttributes = {
+					44D106E62275682E00F72547 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 44D106E22275682E00F72547 /* Build configuration list for PBXProject "opencvios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D106DE2275682E00F72547;
+			productRefGroup = 44D106E82275682E00F72547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D106E62275682E00F72547 /* opencvios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D106E52275682E00F72547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D106F52275682F00F72547 /* LaunchScreen.storyboard in Resources */,
+				44D106F22275682F00F72547 /* Assets.xcassets in Resources */,
+				44F57C81227CB2530083F896 /* opencv_face_detector_uint8.pb in Resources */,
+				449F140A22757336005D9ABF /* README.md in Resources */,
+				440AF37622792C1500D91B0D /* haarcascade_frontalface_default.xml in Resources */,
+				44F57C84227CB2530083F896 /* opencv_face_detector.pbtxt in Resources */,
+				449932AF2277AC9E00F28D03 /* det3.caffemodel in Resources */,
+				449932AD2277AC9E00F28D03 /* det1.caffemodel in Resources */,
+				44D106F02275682E00F72547 /* Main.storyboard in Resources */,
+				44F57C82227CB2530083F896 /* deploy.prototxt in Resources */,
+				449932AE2277AC9E00F28D03 /* det1.prototxt in Resources */,
+				449932B12277AC9E00F28D03 /* det2.prototxt in Resources */,
+				449932B22277AC9E00F28D03 /* det2.caffemodel in Resources */,
+				449932B02277AC9E00F28D03 /* det3.prototxt in Resources */,
+				44F57C83227CB2530083F896 /* res10_300x300_ssd_iter_140000_fp16.caffemodel in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99F5C1D2EB7E08DD4E9E11C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-opencvios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D106E32275682E00F72547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449932CD2277ACD200F28D03 /* pnet.cpp in Sources */,
+				4452F0A7227B629600FEAA69 /* MaintTVC+FPS.swift in Sources */,
+				44F57C80227CB2530083F896 /* ImageProcessDNN.cpp in Sources */,
+				44D106ED2275682E00F72547 /* ProcessVC.swift in Sources */,
+				449932CC2277ACD200F28D03 /* onet.cpp in Sources */,
+				4452F0A9227B726800FEAA69 /* MaintTVC+Cam.swift in Sources */,
+				449A30F622779CD80086094E /* MaintTVC.swift in Sources */,
+				449932CE2277ACD200F28D03 /* detector.cpp in Sources */,
+				449A30F2227798A90086094E /* ImageProcess.cpp in Sources */,
+				44D106EB2275682E00F72547 /* AppDelegate.swift in Sources */,
+				4423BE8B22756CAD00A365FB /* FrameExtractor.swift in Sources */,
+				449932CF2277ACD200F28D03 /* rnet.cpp in Sources */,
+				44D10702227568EC00F72547 /* OpenCVWrapper.mm in Sources */,
+				440AF3732279268100D91B0D /* ImageProcessMTCNN.cpp in Sources */,
+				440AF37922792C3200D91B0D /* ImageProcessHaar.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44D106EE2275682E00F72547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D106EF2275682E00F72547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44D106F32275682F00F72547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D106F42275682F00F72547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D106F72275682F00F72547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44D106F82275682F00F72547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D106FA2275682F00F72547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C52DF4AACE63C967F9607BC /* Pods-opencvios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 875MRQ5J2T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvios/opencv",
+				);
+				INFOPLIST_FILE = opencvios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eg.opencvios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "opencvios/Resources/opencvios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D106FB2275682F00F72547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDA69CBBC516DBDA4293FF9 /* Pods-opencvios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW8L938LVP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvios/opencv",
+				);
+				INFOPLIST_FILE = opencvios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eg.opencvios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "opencvios/Resources/opencvios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D106E22275682E00F72547 /* Build configuration list for PBXProject "opencvios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D106F72275682F00F72547 /* Debug */,
+				44D106F82275682F00F72547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D106F92275682F00F72547 /* Build configuration list for PBXNativeTarget "opencvios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D106FA2275682F00F72547 /* Debug */,
+				44D106FB2275682F00F72547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D106DF2275682E00F72547 /* Project object */;
+}
